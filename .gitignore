@@ -1,0 +1,77 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Build results
+*.dll
+*.exe
+*.app
+*.appref-ms
+*.cache
+*.mdb
+*.pdb
+*.log
+
+# Rider
+.idea/
+*.sln.iml
+
+# IIS Express
+/.vs/
+
+# Docker
+docker-compose.override.yml
+*.env
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+# User-specific files
+*.local
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Generated evidence and temporary files
+EVIDENCIA_EXAMEN.pdf
+evidence_images/
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+
+# JetBrains Rider
+.idea/
+
+# Misc
+*.vsix
+*.zip
+*.tar.gz
+*.tgz

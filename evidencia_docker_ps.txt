@@ -1,0 +1,3 @@
+NAME                     IMAGE                COMMAND                  SERVICE   CREATED          STATUS          PORTS
+practica-final-api-1     practica-final-api   "dotnet Notification…"   api       19 minutes ago   Up 18 minutes   0.0.0.0:5000->80/tcp, [::]:5000->80/tcp
+practica-final-mysql-1   mysql:8.4            "docker-entrypoint.s…"   mysql     19 minutes ago   Up 19 minutes   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp
