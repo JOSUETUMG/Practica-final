@@ -1,0 +1,17 @@
+@NotificationsService.Api_HostAddress = http://localhost:5000
+
+POST {{NotificationsService.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+###
+
+GET {{NotificationsService.Api_HostAddress}}/api/products
+Authorization: Bearer TOKEN_AQUI
+Accept: application/json
+
+###

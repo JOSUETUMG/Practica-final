@@ -1,0 +1,32 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: productsdb
+      MYSQL_USER: productsuser
+      MYSQL_PASSWORD: productspass
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  api:
+    build:
+      context: ./NotificationsService.Api
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    environment:
+      ASPNETCORE_URLS: http://+:80
+      ConnectionStrings__MySql: Server=mysql;Port=3306;Database=productsdb;User=productsuser;Password=productspass;
+      Jwt__Key: exam-products-api-secret-key-change-me-123456789
+      Jwt__Issuer: ProductsApi
+      Jwt__Audience: ProductsApiUsers
+      Auth__Username: admin
+      Auth__Password: admin123
+    ports:
+      - '5000:80'
+
+volumes:
+  mysql-data:

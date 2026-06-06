@@ -58,7 +58,6 @@ docker-compose.override.yml
 Thumbs.db
 
 # Generated evidence and temporary files
-EVIDENCIA_EXAMEN.pdf
 evidence_images/
 
 # Publish output
